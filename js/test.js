@@ -13,5 +13,7 @@ window.onclick = function(e) {
 
 	if(parent.className && parent.parentNode(".menu-list")) {
     var elText = el.textContent;
-    return elText;
+    	/*return elText;*/
+		console.Log(elText);
+    }
 }
