@@ -1,6 +1,7 @@
 window.onclick = function(e) {
 	let el = e.srcElement;
     var parent = el.parentNode;
+    /*
     if(parent.className && parent.className.includes("menu")){
     	var elText = el.textContent;
         console.Log(elText);
@@ -8,4 +9,9 @@ window.onclick = function(e) {
     	var elText = el.textContent;
         console.Log(elText);
     }
+    */
+
+	if(parent.className && parent.parentNode(".menu-list")) {
+    var elText = el.textContent;
+    return elText;
 }
